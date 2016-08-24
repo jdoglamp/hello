@@ -3,7 +3,7 @@
 <title>Travoad</title>
 <head>
     <style>
-
+        
     ::-webkit-scrollbar-thumb {
         height:auto;
         background-color: #555;
@@ -75,17 +75,12 @@
             }
         
         #container2{
-            background-color:#97c1cf;
-            height: 600px;
+            background-color:#f8f8f8;
+            height: 345px;
         }
         
         #container3{
-            background-color:#f8f8f8;
-            height: 400px;
-        }
-        
-         #container4{
-            background-color:#bfbab6;
+            background-color:#97c1cf;
             height: 600px;
         }
         
@@ -94,16 +89,8 @@
             display:inline-block;
             
         }
-       
-        .box{
-            width:97%;
-            height:93%;
-            background-color: transparent;
-            border: 3px white solid;
-            margin-left: auto;
-            margin-right: auto; 
-        }
-        
+    
+
         .box1{
             width:40%;
             height:89%;
@@ -111,6 +98,15 @@
             border: 3px white solid;
             margin-left:2%;
             margin-top:1%;
+        }
+        
+         .box{
+            width:15%;
+            height:60%;
+            background-color: transparent;
+            border: 3px #c35b56 solid;
+            margin-left:30%;
+            margin-top:3.2%;
         }
         
         .t2{
@@ -140,7 +136,66 @@
             letter-spacing: 3px;
             float: right;
         }
+        
+        #p{
+            color:#000000;
+        }
+        
+        .tabnames{
+            font-family: 'Poetsen One';
+            margin-top: 10%;
+            width: 100%;
+            color: #f8f8f8;
+            background-color: #525564;
+            word-spacing: 5%;
+            margin-left: 47%;
+            padding: 2%;
 
+        }
+        
+
+        .items{
+            font-family: 'Helvetica Neue';
+            margin-left: 47%;
+            width:100%;
+            height: auto;
+            background-color: #97c1cf;
+            margin-top: 5%;
+            padding: 2%;
+        }
+            div.items div:not(:target) {display: none}
+            div.items div:target {display: block}
+        
+        .info{
+            width: 26%;
+            float: right;
+            margin-right: 24%;
+            margin-top: -8%;
+            color: #525564;
+            font-family: 'Helvetica Neue';
+            
+        }
+        
+        .place{
+            width: 30%;
+            float: right;
+            margin-right: 20%;
+            margin-top: -10%;
+            color: #525564;
+            font-family: 'Helvetica Neue';
+            
+        }
+        
+        .name{
+            width: 40%;
+            float: right;
+            margin-right: 10.5%;
+            margin-top: -16%;
+            font-family: 'Poetsen One';
+            color: #525564;
+            font-size: 50px;
+            
+        }
     </style>
 </head>    
     
@@ -164,17 +219,35 @@
     <div id="container2">
     <div class="one"></div>
         <div class="box"></div>
+        <h2 align="left" class="name">Tania</h2>
+        <p align="left" class="place"> 25 / England </p><p align="left" class="info">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
     </div>
     
     <div id="container3">
-        <div class="one">           
+        <div class="one"> 
+            <div class="tabs">
+                <div class="tabnames" style="font-size: 34px;">
+                     <div style="letter-spacing: 10px;"> 
+                         <a href="#item1">Leisure </a>/
+                         <a href="#item2">Business </a>/
+                         <a href="#item3">Exchange</a>
+                     </div>
+                </div> 
+                <div class="items">
+                    <div id="item1"> 
+                        <img src="leisure.png" style="width:90%; margin-left: 5%;">
+                    </div>
+                    <div  id="item2">
+                        <img src="business.png" style="width:90%; margin-left: 5%;">
+                    </div>
+                    <div id="item3">
+                        <img src="exchange.png" style="width:90%; margin-left: 5%;">
+                    </div>
+                    
+                </div>
+            </div>
         </div>
     </div>
-    <div id="container4">
-        <div class="one"></div>
-    </div>
-        
-    
 
 
 </body>
